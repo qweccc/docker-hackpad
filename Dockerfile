@@ -15,11 +15,11 @@ RUN git clone --depth 1 https://github.com/dropbox/hackpad.git && rm -rf hackpad
 ADD exports.sh hackpad/bin/exports.sh
 
 RUN mkdir -p lib/ data/logs/
-RUN wget https://cdn.mysql.com/archives/mysql-connector-java-5.1/mysql-connector-java-5.1.34.tar.gz && \
+RUN wget https://cdn.mysql.com/archives/mysql-connector-java-5.1/mysql-connector-java-5.1.38.tar.gz && \
     tar -xzvf mysql-connector-java-5.1.34.tar.gz && \
-    mv mysql-connector-java-5.1.34/mysql-connector-java-5.1.34-bin.jar lib/ && \
-    rm mysql-connector-java-5.1.34.tar.gz && \
-    rm -rf mysql-connector-java-5.1.34/
+    mv mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar lib/ && \
+    rm mysql-connector-java-5.1.38.tar.gz && \
+    rm -rf mysql-connector-java-5.1.38/
 
 RUN ./hackpad/bin/build.sh
 
