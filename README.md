@@ -1,4 +1,4 @@
-# istepanov/hackpad
+# copy istepanov/hackpad for docker
 
 [Hackpad](https://github.com/dropbox/hackpad) Docker image
 
