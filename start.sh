@@ -5,7 +5,7 @@ set -e
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 
 ADMIN_EMAILS=${ADMIN_EMAILS:-admin@example.com}
-DB_HOST=${DB_HOST:-mysql}
+DB_HOST=${DB_HOST:-localhost}
 DB_PORT=${DB_PORT:-3306}
 DB_NAME=${DB_NAME:-hackpad}
 DB_USERNAME=${DB_USERNAME:-hackpad}
